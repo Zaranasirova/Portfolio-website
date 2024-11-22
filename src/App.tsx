@@ -7,9 +7,11 @@ const App = () => {
   return (
     <>
       <TopHeader />
-      <Routes>
+     <main>
+     <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
+     </main>
     </>
   );
 };
