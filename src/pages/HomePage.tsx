@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { IoMdDownload } from "react-icons/io";
 import resume from "../assets/image/cv.pdf/Zərifə.pdf";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 const HomePage = () => {
   return (
@@ -25,11 +29,34 @@ const HomePage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              DOWNLOAD CV
+              DOWNLOAD CV <IoMdDownload />
             </Link>
             <ul>
               <li>
-                <Link to={"/"}></Link>
+                <Link to={"https://github.com/Zaranasirova"}>
+                  <FaGithub />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={
+                    "https://www.linkedin.com/in/z%C9%99rif%C9%99-n%C9%99sirova-34a551309/"
+                  }
+                >
+                  <FaLinkedinIn />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"https://www.facebook.com/profile.php?id=61564042628039"}
+                >
+                  <FaFacebookF />
+                </Link>
+              </li>
+              <li>
+                <Link to={"https://wa.me/994517375883"}>
+                  <FaWhatsapp />
+                </Link>
               </li>
             </ul>
           </div>
