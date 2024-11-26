@@ -1,64 +1,72 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { IoMdDownload } from "react-icons/io";
 import resume from "../assets/image/cv.pdf/Zərifə.pdf";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import cv_image from "../assets/image/cv.pdf/New Project.png";
+import Social from "../components/Social";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   return (
-    <section className="home">
+    <section className="home-section">
       <div className="container">
-        <div className="main-section-container">
-          <div className="profile-intro">
-            <p>Frontend Developer</p>
-            <h1>
-              Hello I`m <span>Zarifa Nasirova</span>
-            </h1>
+        <div className="main-content">
+          <div className="info">
+            <span className="profession-title">Frontend Developer</span>
+            <h2 className="introduction">
+              Hello I`m <br></br><span>Zarifa Nasirova</span>
+            </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis sequi expedita, qui non ipsam sunt!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              eos laudantium exercitationem aliquam dolore! Minus!
             </p>
+            <div className="social-info">
+              <div className="download">
+                <a href={resume} download="Zarife.pdf">
+                  Yukle
+                </a>
+              </div>
+              <Social />
+            </div>
           </div>
-          <div className="profile-actions">
-            <Link
-              to={resume}
-              download="Zərifə_resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+          <div className="photo">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 5, delay: 0.8 }}
+              className="image-container"
             >
-              DOWNLOAD CV <IoMdDownload />
-            </Link>
-            <ul>
-              <li>
-                <Link to={"https://github.com/Zaranasirova"}>
-                  <FaGithub />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={
-                    "https://www.linkedin.com/in/z%C9%99rif%C9%99-n%C9%99sirova-34a551309/"
-                  }
-                >
-                  <FaLinkedinIn />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"https://www.facebook.com/profile.php?id=61564042628039"}
-                >
-                  <FaFacebookF />
-                </Link>
-              </li>
-              <li>
-                <Link to={"https://wa.me/994517375883"}>
-                  <FaWhatsapp />
-                </Link>
-              </li>
-            </ul>
+              <img src={cv_image} alt="" />
+            </motion.div>
+            <motion.svg
+              fill="transparent"
+              viewBox="0 0 430 430"
+              xmlns="http://www.w3.org/2000/svg"
+              className="circle-box"
+            >
+              <motion.circle
+                cx="215"
+                cy="215"
+                r="215"
+                stroke="#00ff99"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                initial={{ strokeDasharray: "24 10 0 0" }}
+                animate={{
+                  strokeDasharray: [
+                    "15 120 25 25",
+                    "16 25 92 72",
+                    "4 250 22 22",
+                  ],
+                  rotate: [120, 360],
+                }}
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  ease: "linear",
+                  repeatType: "reverse",
+                }}
+              />
+            </motion.svg>
           </div>
         </div>
       </div>
