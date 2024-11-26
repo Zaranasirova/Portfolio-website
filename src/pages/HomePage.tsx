@@ -4,7 +4,7 @@ import cv_image from "../assets/image/cv.pdf/New Project.png";
 import Social from "../components/Social";
 import { color, motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa6";
-
+import Counter from "../components/Counter";
 
 const HomePage = () => {
   return (
@@ -14,7 +14,8 @@ const HomePage = () => {
           <div className="info">
             <span className="profession-title">Frontend Developer</span>
             <h2 className="introduction">
-              Hello I`m <br></br><span>Zarifa Nasirova</span>
+              Hello I`m <br></br>
+              <span>Zarifa Nasirova</span>
             </h2>
             <p className="introduction-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
@@ -23,7 +24,7 @@ const HomePage = () => {
             <div className="social-info">
               <button className="download">
                 <a href={resume} download="Zarife.pdf">
-                  Download Cv  <FaDownload className="download-icon" />
+                  Download Cv <FaDownload className="download-icon" />
                 </a>
               </button>
               <Social />
@@ -70,6 +71,12 @@ const HomePage = () => {
               />
             </motion.svg>
           </div>
+        </div>
+        <div className="counter-box">
+        <Counter targetNumber={1} duration={500} text={"Years of experience"} />
+        <Counter targetNumber={19} duration={1000} text={"Projects completed"} />
+        <Counter targetNumber={6} duration={1000} text={"Technologies mastered"} />
+        <Counter targetNumber={281} duration={1000} text={"Code commits"} />
         </div>
       </div>
     </section>
