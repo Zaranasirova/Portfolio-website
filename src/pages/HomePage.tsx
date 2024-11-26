@@ -2,7 +2,8 @@ import React from "react";
 import resume from "../assets/image/cv.pdf/Zərifə.pdf";
 import cv_image from "../assets/image/cv.pdf/New Project.png";
 import Social from "../components/Social";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
+import { FaDownload } from "react-icons/fa6";
 
 const HomePage = () => {
   return (
@@ -14,16 +15,16 @@ const HomePage = () => {
             <h2 className="introduction">
               Hello I`m <br></br><span>Zarifa Nasirova</span>
             </h2>
-            <p>
+            <p className="introduction-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               eos laudantium exercitationem aliquam dolore! Minus!
             </p>
             <div className="social-info">
-              <div className="download">
+              <button className="download">
                 <a href={resume} download="Zarife.pdf">
-                  Yukle
+                  Download Cv  <FaDownload fill="#00ff99"/>
                 </a>
-              </div>
+              </button>
               <Social />
             </div>
           </div>
