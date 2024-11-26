@@ -11,6 +11,18 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
+    &:hover{
+        background-color: var(--color);
+        transition: all 0.5s;
+       a{
+        color: #fff;
+        font-weight: 400;
+        .icon{
+            fill:#fff;
+            font-weight: 900;
+          }
+       }
+    }
  
   }
 }

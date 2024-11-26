@@ -73,13 +73,30 @@
         .social-info {
           display: flex;
           gap: 30px;
+          margin-top: 20px;
           .download {
             border: 1px solid var(--color);
             border: 1px solid var(--color);
             border-radius: 40px;
-            padding: 12px 18px;
+            padding: 15px 18px;
+            background-color: transparent;
             a {
               color: var(--color);
+              .download-icon{
+                fill: var(--color);
+              }
+            }
+            &:hover{
+                background-color: var(--color);
+                transition: all 0.5s;
+               a{
+                color: #fff;
+                font-weight: 400;
+                .download-icon{
+                    fill:#fff;
+                    font-weight: 500;
+                  }
+               }
             }
           }
         }

@@ -6,7 +6,6 @@
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
-  background-color: #050220;
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
@@ -22,7 +21,9 @@
     display: block;
   }
 }
-
+body{
+  background-color: #03011a;
+}
 .active {
   color: var(--color);
   position: relative;

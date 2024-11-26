@@ -5,6 +5,7 @@ import Social from "../components/Social";
 import { color, motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa6";
 
+
 const HomePage = () => {
   return (
     <section className="home-section">
@@ -22,7 +23,7 @@ const HomePage = () => {
             <div className="social-info">
               <button className="download">
                 <a href={resume} download="Zarife.pdf">
-                  Download Cv  <FaDownload fill="#00ff99"/>
+                  Download Cv  <FaDownload className="download-icon" />
                 </a>
               </button>
               <Social />

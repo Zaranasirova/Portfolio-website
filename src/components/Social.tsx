@@ -15,19 +15,19 @@ const Social = () => {
 
   const socials: SocialItem[] = [
     {
-      icon: <FaGithub fill="#00ff99" />,
+      icon: <FaGithub fill="#00ff99" className="icon"  />,
       path: "https://github.com/",
     },
     {
-      icon: <FaLinkedinIn fill="#00ff99"/>,
+      icon: <FaLinkedinIn fill="#00ff99" className="icon" />,
       path: "https://www.linkedin.com/in/z%C9%99rif%C9%99-n%C9%99sirova-34a551309/",
     },
     {
-      icon: <FaFacebookF fill="#00ff99" />,
+      icon: <FaFacebookF fill="#00ff99" className="icon" />,
       path: "https://www.facebook.com/profile.php?id=61564042628039",
     },
     {
-      icon: <FaWhatsapp fill="#00ff99" />,
+      icon: <FaWhatsapp fill="#00ff99" className="icon"  />,
       path: "https://github.com/",
     },
   ];
