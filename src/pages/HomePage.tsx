@@ -22,11 +22,11 @@ const HomePage = () => {
               eos laudantium exercitationem aliquam dolore! Minus!
             </p>
             <div className="social-info">
-              <button className="download">
-                <a href={resume} download="Zarife.pdf">
-                  Download Cv <FaDownload className="download-icon" />
+             
+                <a href={resume} download="Zarife.pdf" className="download">
+                  <button>Download Cv <FaDownload className="download-icon" /></button>
                 </a>
-              </button>
+             
               <Social />
             </div>
           </div>

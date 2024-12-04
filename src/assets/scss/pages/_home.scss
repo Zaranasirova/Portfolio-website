@@ -78,31 +78,34 @@
             border: 1px solid var(--color);
             border: 1px solid var(--color);
             border-radius: 40px;
-            padding: 15px 18px;
+            padding: 15px 22px;
             background-color: transparent;
-            a {
+            display: block;
+            button {
               color: var(--color);
-              .download-icon{
+              border: none;
+              background-color: transparent;
+              .download-icon {
                 fill: var(--color);
               }
             }
-            &:hover{
-                background-color: var(--color);
-                transition: all 0.5s;
-               a{
+            &:hover {
+              background-color: var(--color);
+              transition: all 0.5s;
+              button {
                 color: #fff;
                 font-weight: 400;
-                .download-icon{
-                    fill:#fff;
-                    font-weight: 500;
-                  }
-               }
+                .download-icon {
+                  fill: #fff;
+                  font-weight: 500;
+                }
+              }
             }
           }
         }
       }
     }
-    .counter-box{
+    .counter-box {
       display: flex;
       justify-content: space-between;
       width: 100%;

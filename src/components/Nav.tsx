@@ -9,7 +9,6 @@ const Nav = () => {
     <nav className='nav'>
         <ul className='nav-list'>
             <li><Link to={"/"} className='active'>Home</Link></li>
-            <li><Link to={"/"}>Services</Link></li>
             <li><Link to={"/"}>Resume</Link></li>
             <li><Link to={"/"}>Work</Link></li>
             <li><Link to={"/"}>Contact</Link></li>

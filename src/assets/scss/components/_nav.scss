@@ -1,13 +1,13 @@
 .nav {
   display: flex;
-  gap: 15px;
+  gap: 30px;
   align-items: center;
   @media (max-width: 500px) {
     display: none;
   }
   .nav-list {
     display: flex;
-    gap: 15px;
+    gap: 25px;
     align-items: center;
     height: 100%;
     a {
@@ -25,7 +25,7 @@
     padding: 7px 16px;
     font-size: 18px;
     position: relative;
-    color: black;
-    font-weight: 500;
+    color: #03011a;
+    font-weight: 500
   }
 }

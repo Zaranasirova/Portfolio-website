@@ -22,13 +22,13 @@ const Counter = ({ targetNumber, duration,text }) => {
     }, [targetNumber, duration]);
 
     return (
-        <motion.div style={{ display: "flex", gap: "5px",alignItems:"center",flexBasis:"25%",justifyContent:"center" }}
+        <motion.div style={{ display: "flex", gap: "5px",alignItems:"center",flexBasis:"25%", }}
         >
             <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-                style={{ fontSize: "50px", fontWeight:"700",}}
+                style={{ fontSize: "50px", fontWeight:"700", color:"#ddd"}}
             >
                 {Math.floor(currentNumber)}
 
